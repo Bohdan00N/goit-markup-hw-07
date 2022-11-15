@@ -164,7 +164,7 @@ ul {
   border: none;
   cursor: pointer;
 }
-.section .advantages-title {
+.section .hidden-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -218,7 +218,7 @@ ul {
   align-items: flex-start;
   gap: 30px;
 }
-.advantages__list .advantages__item-title{
+.advantages__list .advantages__item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -245,33 +245,34 @@ ul {
   border-radius: 0px 0px 4px 4px;
   display: inline-table;
 }
-.filter-list {
+.filter__list {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
-.filter-list-branch {
+.filter__list__item {
   font-size: 16px;
   line-height: 1.6;
   vertical-align: Top;
   padding-bottom: 50px;
-  margin-right: 8px;
+  
 }
-.portfolio {
+.portfolio__list{
   display: flex;
   flex-wrap: wrap;
   gap: 21px;
 }
-.portfolio-branch {
+.portfolio__list__item {
   background: #fff;
 }
-.portfolio-branch:hover,
-.portfolio-branch:focus {
+.portfolio__list__item:hover,
+.portfolio__list__item:focus {
   transform: translateY(0%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
-.image-text {
+.portfolio__list__img-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -288,15 +289,15 @@ ul {
   transform: translateY(101%);
 }
 
-.portfolio-img-wraper {
+.portfolio__list__item-block {
   position: relative;
   overflow: hidden;
 }
-.portfolio-branch-img {
+.portfolio__list__item-link {
   text-decoration: none;
 }
-.portfolio-branch-img:hover .image-text,
-.portfolio-branch-img:focus .image-text {
+.portfolio__list__item-link:hover .portfolio__list__img-text,
+.portfolio__list__item-link:focus .portfolio__list__img-text {
   transform: translateY(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -319,7 +320,7 @@ ul {
   letter-spacing: 0.03em;
   margin: 0;
 }
-.logo-footer {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -334,25 +335,25 @@ ul {
   color: var(--hero-color);
   text-decoration: none;
 }
-.address {
+.footer-wraper__address-contacts {
   display: flex;
   flex-direction: column;
   font-style: normal;
 }
-.address-list .map-link {
+.footer-wraper__address-list .map-link {
   color: var(--hero-color);
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
 }
-.address-list .map-link:hover,
-.address-list .map-link:focus {
+.footer-wraper__address-list .map-link:hover,
+.footer-wraper__address-list .map-link:focus {
   color: var(--accent-color);
   font-style: normal;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list .link {
+.footer-wraper__address-list .link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
@@ -361,8 +362,8 @@ ul {
   padding-top: 9px;
   vertical-align: Top;
 }
-.address-list .link.link:hover,
-.address-list .link.link:focus {
+.footer-wraper__address-list .link.link:hover,
+.footer-wraper__address-list .link.link:focus {
   color: var(--accent-color);
   font-style: normal;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -376,15 +377,11 @@ ul {
   fill: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list-branch {
+.footer-wraper__address-list {
   margin-bottom: 9px;
 }
-.logo-footer {
-  margin-bottom: 20px;
-}
-
 /* portfolio.html */
-.button {
+.filter__list__item__button {
   color: var(--main-color);
   background-color: #f5f4fa;
   cursor: pointer;
@@ -398,8 +395,8 @@ ul {
   border: 0ch;
   padding: 6px 22px;
 }
-.button:hover,
-.button:focus {
+.filter__list__item__button:hover,
+.filter__list__item__button:focus {
   color: var(--hero-color);
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -458,13 +455,13 @@ ul {
 }
 /*portfolio*/
 
-.about {
+.portfolio__list__img-text {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-.image-portfolio {
+.portfolio__list__img {
   display: block;
 }
 
@@ -476,12 +473,12 @@ ul {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.social-icons__svg {
+.social-icon__svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.footer-socials .social-icons__svg {
+.footer-wraper__socials .social-icon__svg {
   fill: var(--hero-color);
   background: Solid rgba(255, 255, 255, 0.1);
 }
@@ -510,7 +507,7 @@ ul {
   border: 1px solid;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-p {
+.footer-wraper__socials__p {
   display: flex;
   font-size: 14px;
   font-weight: bold;
@@ -529,7 +526,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-.footer-socials {
+.footer-wraper__socials {
   padding-top: 12px;
 }
 .team__cards__socials-icons-link {
@@ -549,7 +546,7 @@ ul {
   background: #2196f3;
 }
 
-.link-footer-icons {
+.footer-wraper__socials__link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -559,8 +556,8 @@ ul {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.link-footer-icons:hover,
-.link-footer-icons:focus {
+.footer-wraper__socials__link:hover,
+.footer-wraper__socials__link:focus {
   background: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -569,17 +566,17 @@ ul {
   border-radius: 4px;
   color: #afb1b8;
 }
-.subscribe-block {
+.footer-wraper__subscribe-block {
   padding-top: 12px;
   margin-left: 93px;
 }
-.subscribe {
+.footer-wraper__subscribe-form {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
-.footer-p-next {
+.footer-wraper__subscribe-block__p {
   display: flex;
   font-size: 14px;
   font-weight: bold;
@@ -606,7 +603,7 @@ ul {
   font-size: 16px;
   line-height: 1.25;
 }
-.button-mail {
+.footer-wraper__subscribe-block__subcribe-button {
   color: var(--hero-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -622,11 +619,11 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.button-mail:hover,
-.button-mail:focus {
+.footer-wraper__subscribe-block__subcribe-button:hover,
+.footer-wraper__subscribe-block__subcribe-button:focus {
   cursor: pointer;
 }
-.icon-send {
+.subcribe-button__icon-send {
   fill: var(--hero-color);
   margin-left: 10px;
 }
@@ -641,7 +638,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window{
+.modal-window {
   max-width: 528px;
 
   background-color: var(--hero-color);
@@ -666,7 +663,7 @@ ul {
   color: var(--main-color);
   margin-bottom: 12px;
 }
-.backdrop.is-hidden .modal-window{
+.backdrop.is-hidden .modal-window {
   transform: scale(1.3);
 }
 .close-button {
@@ -775,7 +772,7 @@ ul {
   position: absolute;
   user-select: none;
 }
-.modal-window__privacy{
+.modal-window__privacy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142;
