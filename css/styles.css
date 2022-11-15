@@ -37,7 +37,7 @@ ul {
 .section {
   padding: 94px 0;
 }
-.section-nopad {
+.solutions {
   padding: 0 0 94px 0;
 }
 .header {
@@ -137,7 +137,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-top {
+.hero__title {
   color: var(--hero-color);
   font-weight: 900;
   font-size: 44px;
@@ -148,7 +148,7 @@ ul {
   width: 696px;
   text-align: center;
 }
-.main-button {
+.hero__button {
   height: 50px;
   width: 216px;
   font-style: normal;
@@ -164,7 +164,7 @@ ul {
   border: none;
   cursor: pointer;
 }
-.section .section-title-hidden {
+.section .advantages-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -177,7 +177,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section-team {
+.team {
   background-color: #f5f4fa;
 }
 .section .section-title {
@@ -189,11 +189,11 @@ ul {
   color: var(--main-color);
   margin: 0 0 50px 0;
 }
-.photo-cards {
+.solutions__cards {
   display: flex;
   gap: 30px;
 }
-.photo-cards-p {
+.solutions__cards-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1666;
@@ -208,35 +208,35 @@ ul {
   padding: 27px 10px;
   width: 100%;
 }
-.photo-cards-child {
+.solutions__cards-photo {
   position: relative;
 }
 
-.plus-list {
+.advantages__list {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
 }
-.plus-list .title-up {
+.advantages__list .advantages__item-title{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.plus-list .title-down {
+.advantages__list .advantages__item-text {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
-.photo-team {
+.team__cards {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.photo-team-branch {
+.team__cards-photo {
   width: 270px;
   height: 368px;
   background-color: var(--hero-color);
@@ -301,7 +301,7 @@ ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.photo-team .title-up {
+.team__cards .title {
   color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
@@ -310,7 +310,7 @@ ul {
   margin: 30px 0 10px 0;
   letter-spacing: 0.03em;
 }
-.photo-team .title-down {
+.team__cards .advantages__item-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.2;
@@ -407,16 +407,17 @@ ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title-up {
+.title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: #212121;
 }
-.title-down {
+.p {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.8;
+  text-align: center;
 }
 
 /*geometry*/
@@ -439,7 +440,7 @@ ul {
   height: 80px;
 }
 
-.container-hero .main-button {
+.container-hero .hero__button {
   margin: 30px 692px;
   max-height: 50px;
   max-width: 216px;
@@ -450,7 +451,7 @@ ul {
   width: 696px;
   text-align: center;
 }
-.plus-list-branch {
+.advantages__item {
   display: block;
   justify-content: center;
   gap: 10px;
@@ -467,7 +468,7 @@ ul {
   display: block;
 }
 
-.plus-list-icons {
+.advantages__icons {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
@@ -475,16 +476,16 @@ ul {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.photo-team-icons {
+.social-icons__svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.footer-socials .photo-team-icons {
+.footer-socials .social-icons__svg {
   fill: var(--hero-color);
   background: Solid rgba(255, 255, 255, 0.1);
 }
-.photo-team-branch-icons-list {
+.socials-icons {
   display: flex;
   list-style: none;
   align-items: center;
@@ -497,14 +498,14 @@ ul {
   justify-content: center;
   gap: 30px;
 }
-.clients-list-branch {
+.clients-list__item {
   width: 170px;
   height: 92px;
   display: flex;
   cursor: pointer;
 }
-.link-clients:hover,
-.link-clients:focus {
+.clients-list__item-link:hover,
+.clients-list__item-link:focus {
   color: var(--accent-color);
   border: 1px solid;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -518,7 +519,7 @@ ul {
   margin-bottom: 20px;
   margin-left: 33px;
 }
-.clients-icons {
+.clients-list__icons {
   fill: currentColor;
   width: 170px;
   height: 92px;
@@ -531,7 +532,7 @@ ul {
 .footer-socials {
   padding-top: 12px;
 }
-.link-photo-team-icons {
+.team__cards__socials-icons-link {
   display: flex;
   height: 44px;
   color: #afb1b8;
@@ -541,8 +542,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.link-photo-team-icons:hover,
-.link-photo-team-icons:focus {
+.team__cards__socials-icons-link:hover,
+.team__cards__socials-icons-link:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
   background: #2196f3;
@@ -563,7 +564,7 @@ ul {
   background: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-clients {
+.clients-list__item-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -629,7 +630,7 @@ ul {
   fill: var(--hero-color);
   margin-left: 10px;
 }
-.modal-wrap {
+.backdrop {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   top: 0;
@@ -640,7 +641,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal {
+.modal-window{
   max-width: 528px;
 
   background-color: var(--hero-color);
@@ -656,7 +657,7 @@ ul {
   left: 50%;
   z-index: 3;
 }
-.modal-p {
+.modal-window__form__p {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -665,7 +666,7 @@ ul {
   color: var(--main-color);
   margin-bottom: 12px;
 }
-.modal-wrap.is-hidden .modal {
+.backdrop.is-hidden .modal-window{
   transform: scale(1.3);
 }
 .close-button {
@@ -692,7 +693,7 @@ ul {
   pointer-events: none;
   visibility: hidden;
 }
-.modal-form-row {
+.modal-window__row {
   position: relative;
   font-weight: 400;
   font-size: 12px;
@@ -701,12 +702,12 @@ ul {
   color: #757575;
   margin-bottom: 10px;
 }
-.form-row-title {
+.modal-window__label {
   display: block;
   color: #757575;
   margin-bottom: 4px;
 }
-.textarea-form {
+.modal-window__comment {
   position: relative;
   font-weight: 400;
   font-size: 12px;
@@ -722,12 +723,12 @@ ul {
   resize: none;
   height: 120px;
 }
-.textarea-form:hover,
-.textarea-form:focus {
+.modal-window__comment:hover,
+.modal-window__comment:focus {
   border: 1px solid #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.row-input {
+.modal-window__input {
   display: block;
   width: 100%;
   height: 40px;
@@ -738,51 +739,43 @@ ul {
   cursor: pointer;
   margin-bottom: 10px;
 }
-.row-input::placeholder {
+.modal-window__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.row-input:focus,
-.row-input:hover {
+.modal-window__input:focus,
+.modal-window__input:hover {
   border: 1px solid #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.row-input:focus + svg,
-.row-input:hover + svg {
+.modal-window__input:focus + svg,
+.modal-window__input:hover + svg {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-modal {
+.modal-window__icons {
   fill: var(--main-color);
   position: absolute;
   top: 27px;
   left: 12px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-modal-tel {
-  fill: var(--main-color);
-  position: absolute;
+.tel {
   top: 97px;
-  left: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-modal-mail {
-  fill: var(--main-color);
-  position: absolute;
+.mail {
   top: 164px;
-  left: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.privacy-label {
+.privacy__label {
   position: relative;
   padding-left: 37px;
 }
-.privacy-input {
+.privacy__input {
   opacity: 0;
   appearance: none;
   position: absolute;
   user-select: none;
 }
-.privacy {
+.modal-window__privacy{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142;
@@ -790,7 +783,7 @@ ul {
   color: #757575;
   position: relative;
 }
-.privacy .privacy-label::before {
+.modal-window__privacy .privacy__label::before {
   position: absolute;
   cursor: pointer;
   display: inline-block;
@@ -803,7 +796,7 @@ ul {
   left: 12px;
   top: 0px;
 }
-.privacy .privacy-input:checked + .privacy-label::before {
+.modal-window__privacy .privacy__input:checked + .privacy__label::before {
   background-color: var(--accent-color);
   background-image: url("../images/icon-checkbox.svg");
   background-size: contain;
@@ -811,17 +804,17 @@ ul {
   background-position: center;
   border: 1px solid var(--accent-color);
 }
-.form-link {
+.privacy__link {
   color: var(--accent-color);
   text-decoration-skip-ink: none;
 }
-.privacy .privacy-input:focus + .privacy-label::before,
-.privacy .privacy-input:hover + .privacy-label::before {
+.modal-window__privacy .privacy__input:focus + .privacy__label::before,
+.modal-window__privacy .privacy__input:hover + .privacy__label::before {
   outline: auto;
   outline-color: var(--accent-color);
   transition: var(--o-animation);
 }
-.modal-button {
+.modal-window__button-submit {
   height: 50px;
   width: 200px;
   font-style: normal;
@@ -835,14 +828,13 @@ ul {
   color: var(--hero-color);
   border: none;
   cursor: pointer;
-  
-}
-.modal-button:hover,
-.modal-button:focus {
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: color var(--o-animation);
 }
-.button-div {
+.modal-window__button-submit:hover,
+.modal-window__button-submit:focus {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+.modal-window__button {
   display: flex;
   align-items: center;
   justify-content: center;
