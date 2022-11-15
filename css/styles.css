@@ -410,11 +410,13 @@ ul {
   line-height: 2;
   color: #212121;
 }
+.team__cards-photo .p{
+  text-align: center;
+}
 .p {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.8;
-  text-align: center;
 }
 
 /*geometry*/
@@ -455,7 +457,7 @@ ul {
 }
 /*portfolio*/
 
-.portfolio__list__img-text {
+.portfolio__list__item__about {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
