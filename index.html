@@ -11,8 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -68,13 +67,15 @@
     <main>
       <!--Герой-->
       <section class="section hero">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open class="hero__button" type="button">
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="hero__button" type="button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
       <!--Чим ми займаємося-->
-      <section class="section">
+      <section class="section advantages">
         <div class="container">
           <h2 class="hidden-title">Наші обов'язки</h2>
           <!--Зробити непомітним, функція для людей без зору-->
@@ -169,7 +170,7 @@
               <p class="p">Product Designer</p>
               <ul class="socials-icons">
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-instagramsvg"
@@ -178,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-twittersvg"
@@ -186,7 +187,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-facebooksvg"
@@ -194,7 +195,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-linkedinsvg"
@@ -209,7 +210,7 @@
               <p class="p">Frontend Developer</p>
               <ul class="socials-icons">
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-instagramsvg"
@@ -218,7 +219,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-twittersvg"
@@ -226,7 +227,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-facebooksvg"
@@ -234,7 +235,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-linkedinsvg"
@@ -249,7 +250,7 @@
               <p class="p">Marketing</p>
               <ul class="socials-icons">
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-instagramsvg"
@@ -258,7 +259,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-twittersvg"
@@ -266,7 +267,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-facebooksvg"
@@ -274,7 +275,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-linkedinsvg"
@@ -289,7 +290,7 @@
               <p class="p">UI Designer</p>
               <ul class="socials-icons">
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-instagramsvg"
@@ -298,7 +299,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-twittersvg"
@@ -306,7 +307,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-facebooksvg"
@@ -314,7 +315,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="team__cards__socials-icons-link" href="#">
+                  <a class="social-icons__link" href="#">
                     <svg class="social-icon__svg">
                       <use
                         xlink:href="./images/sprite.svg#icon-linkedinsvg"
@@ -472,7 +473,7 @@
       <div class="container">
         <div class="footer-wraper">
           <div class="footer-wraper__address-block">
-            <a class="footer__logo logo " lang="en" href="./index.html"
+            <a class="footer__logo logo" lang="en" href="./index.html"
               >Web<span class="logo-part">Studio</span>
             </a>
             <address class="footer-wraper__address-contacts">
@@ -536,8 +537,14 @@
             </ul>
           </div>
           <div class="footer-wraper__subscribe-block">
-            <p class="footer-wraper__subscribe-block__p">Підпишіться на розсилку</p>
-            <form action="#" class="footer-wraper__subscribe-form" name="subscribe">
+            <p class="footer-wraper__subscribe-block__p">
+              Підпишіться на розсилку
+            </p>
+            <form
+              action="#"
+              class="footer-wraper__subscribe-form"
+              name="subscribe"
+            >
               <label for="email">
                 <input
                   id="input-email"
@@ -546,7 +553,10 @@
                   name="mail"
                 />
               </label>
-              <button class="footer-wraper__subscribe-block__subcribe-button" type="submit">
+              <button
+                class="footer-wraper__subscribe-block__subcribe-button"
+                type="submit"
+              >
                 Підписатися
                 <svg class="subcribe-button__icon-send" width="24" height="24">
                   <use xlink:href="./images/sprite.svg#icon-send"></use>
