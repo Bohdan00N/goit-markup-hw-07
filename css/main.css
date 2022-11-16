@@ -706,8 +706,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
+  -webkit-transition: background, color, var(--o-animation);
+  transition: background, color, var(--o-animation);
 }
 
 .social-icons__link:hover,
@@ -986,8 +986,8 @@ ul {
   outline: none;
   resize: none;
   height: 120px;
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
+  -webkit-transition: border-color, color, var(--o-animation);
+  transition: border-color, color, var(--o-animation);
 }
 
 .modal-window__comment:hover,
@@ -1003,10 +1003,9 @@ ul {
   border-radius: 4px;
   padding: 10px 10px 10px 42px;
   outline: none;
-  cursor: pointer;
   margin-bottom: 10px;
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
+  -webkit-transition: border-color, color, var(--o-animation);
+  transition: border-color, color, var(--o-animation);
 }
 
 .modal-window__input::-webkit-input-placeholder {
@@ -1037,8 +1036,6 @@ ul {
 .modal-window__input:focus + svg,
 .modal-window__input:hover + svg {
   fill: #2196f3;
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
 }
 
 .modal-window__privacy {
@@ -1083,8 +1080,6 @@ ul {
 .modal-window__privacy .privacy__input:hover + .privacy__label::before {
   outline: auto;
   outline-color: var(--accent-color);
-  -webkit-transition: var(--o-animation);
-  transition: var(--o-animation);
 }
 
 .privacy__label {
@@ -1102,6 +1097,8 @@ ul {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: border-color var(--o-animation);
+  transition: border-color var(--o-animation);
 }
 
 .footer__logo {
@@ -1213,8 +1210,8 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
+  -webkit-transition: background, color, var(--o-animation);
+  transition: background, color, var(--o-animation);
 }
 
 .footer-wraper__socials__link:hover,
@@ -1392,8 +1389,6 @@ ul {
 .portfolio__list__item-link:focus .portfolio__list__img-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: color var(--o-animation);
-  transition: color var(--o-animation);
 }
 
 .portfolio__list__item__about {

@@ -66,7 +66,7 @@
   outline: none;
   resize: none;
   height: 120px;
-  transition: color var(--o-animation);
+  transition: border-color, color, var(--o-animation);
 }
 .modal-window__comment:hover,
 .modal-window__comment:focus {
@@ -80,9 +80,8 @@
   border-radius: 4px;
   padding: 10px 10px 10px 42px;
   outline: none;
-  cursor: pointer;
   margin-bottom: 10px;
-  transition: color var(--o-animation);
+  transition: border-color, color, var(--o-animation);
 }
 .modal-window__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -94,7 +93,6 @@
 .modal-window__input:focus + svg,
 .modal-window__input:hover + svg {
   fill: #2196f3;
-  transition: color var(--o-animation);
 }
 .modal-window__privacy {
   font-weight: 400;
@@ -133,7 +131,6 @@
 .modal-window__privacy .privacy__input:hover + .privacy__label::before {
   outline: auto;
   outline-color: var(--accent-color);
-  transition: var(--o-animation);
 }
 .privacy__label {
   position: relative;
@@ -144,4 +141,5 @@
   appearance: none;
   position: absolute;
   user-select: none;
+  transition: border-color var(--o-animation);
 }
