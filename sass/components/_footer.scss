@@ -37,7 +37,7 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
-  padding-top: 9px;
+  
   vertical-align: Top;
   transition: color var(--o-animation);
   &.link:hover,
@@ -45,7 +45,7 @@
     color: var(--accent-color);
   }
 }
-.footer-wraper__address-list {
+.footer-wraper__address-list__item{
   margin-bottom: 9px;
 }
 .footer-wraper__socials__p {

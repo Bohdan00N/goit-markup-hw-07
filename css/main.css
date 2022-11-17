@@ -1115,7 +1115,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
-  padding-top: 9px;
   vertical-align: Top;
   -webkit-transition: color var(--o-animation);
   transition: color var(--o-animation);
@@ -1124,7 +1123,7 @@ ul {
   color: var(--accent-color);
 }
 
-.footer-wraper__address-list {
+.footer-wraper__address-list__item {
   margin-bottom: 9px;
 }
 
