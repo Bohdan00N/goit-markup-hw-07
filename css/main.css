@@ -1132,6 +1132,9 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 3%;
 }
 
 .footer-wraper__address-list .map-link {
@@ -1154,8 +1157,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
   padding-top: 9px;
   vertical-align: Top;
   -webkit-transition: color var(--o-animation);
