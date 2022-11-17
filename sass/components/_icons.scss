@@ -44,12 +44,12 @@
   transition: color var(--o-animation);
   pointer-events: none;
 }
-.social-icon__svg {
+.social-icons__svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.footer-wraper__socials .social-icon__svg {
+.footer-wraper__socials .social-icons__svg {
   fill: var(--hero-color);
   background: Solid rgba(255, 255, 255, 0.1);
 }
