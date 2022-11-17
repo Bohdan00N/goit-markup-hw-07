@@ -2,7 +2,6 @@
   display: block;
   margin-bottom: 20px;
 }
-
 .footer {
   background-color: #2f303a;
   display: flex;
@@ -28,11 +27,11 @@
   font-size: 14px;
   line-height: 1.7;
   transition: color var(--o-animation);
-}
-.footer-wraper__address-list .map-link:hover,
-.footer-wraper__address-list .map-link:focus {
-  color: var(--accent-color);
-  font-style: normal;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    font-style: normal;
+  }
 }
 .footer-wraper__address-list .link {
   color: rgba(255, 255, 255, 0.6);
@@ -41,12 +40,11 @@
   padding-top: 9px;
   vertical-align: Top;
   transition: color var(--o-animation);
+  &.link:hover,
+  &.link:focus {
+    color: var(--accent-color);
+  }
 }
-.footer-wraper__address-list .link.link:hover,
-.footer-wraper__address-list .link.link:focus {
-  color: var(--accent-color);
-}
-
 .footer-wraper__address-list {
   margin-bottom: 9px;
 }
@@ -59,7 +57,6 @@
   margin-bottom: 20px;
   margin-left: 33px;
 }
-
 .footer-wraper {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +64,6 @@
 .footer-wraper__socials {
   padding-top: 12px;
 }
-
 .footer-wraper__socials__link {
   display: flex;
   height: 44px;
@@ -78,10 +74,10 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background, color, var(--o-animation);
-}
-.footer-wraper__socials__link:hover,
-.footer-wraper__socials__link:focus {
-  background: var(--accent-color);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
 }
 .footer-wraper__subscribe-block {
   padding-top: 12px;
@@ -111,12 +107,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-}
-#input-email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  font-size: 16px;
-  line-height: 1.25;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }

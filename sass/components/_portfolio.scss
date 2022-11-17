@@ -6,12 +6,12 @@
 .portfolio__list__item {
   background: #fff;
   transition: color var(--o-animation);
-}
-.portfolio__list__item:hover,
-.portfolio__list__item:focus {
-  transform: translateY(0%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    transform: translateY(0%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+  }
 }
 .portfolio__list__img-text {
   position: absolute;
@@ -35,12 +35,11 @@
 }
 .portfolio__list__item-link {
   text-decoration: none;
+  &:hover .portfolio__list__img-text,
+  &:focus .portfolio__list__img-text {
+    transform: translateY(0);
+  }
 }
-.portfolio__list__item-link:hover .portfolio__list__img-text,
-.portfolio__list__item-link:focus .portfolio__list__img-text {
-  transform: translateY(0);
-}
-
 .portfolio__list__item__about {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;

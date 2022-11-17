@@ -2,10 +2,10 @@
   fill: var(--title-text-color);
   margin-right: 10px;
   transition: color var(--o-animation);
-}
-.contacts__link:hover .contacts__link__header-icons,
-.contacts__link:focus .contacts__link__header-icons {
-  fill: var(--accent-color);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
 }
 .socials-icons {
   display: flex;
@@ -30,11 +30,11 @@
   justify-content: center;
   align-items: center;
   transition: background, color, var(--o-animation);
-}
-.social-icons__link:hover,
-.social-icons__link:focus {
-  color: #fff;
-  background: #2196f3;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #2196f3;
+  }
 }
 .modal-window__icons {
   fill: var(--main-color);
